@@ -12,7 +12,8 @@ namespace openTill.Domain.Interface
         void Update(ProductDTO givenProduct);
         void Delete(ProductDTO givenProduct);
         void Create(ProductDTO givenProdcut);
-        void GetByUPC(string givenUPC);
-        IEnumerable<ProductDTO> GetAll();  
+        ProductDTO GetByUPC(string givenUPC);
+        IEnumerable<ProductDTO> GetAll();
+        IEnumerable<ProductDTO> GetByBrand(string givenBrand);
     }
 }
